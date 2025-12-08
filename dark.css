@@ -1,0 +1,68 @@
+.dark {
+    color: #ffffffd4;
+    background: #151a28;
+}
+.dark #extensionsList, .dark .panel-header {
+    border-color: #485163;
+}
+.dark .body {
+    color: #ffffffd4;
+    background: #151a28;
+}
+.dark .edge #extensionsList .options-btn:hover {
+    background-color: #babcbd11;
+}
+.dark .options-btn img, .dark button img {
+    filter: invert(1);
+}
+.dark .menu {
+    background: rgb(33 39 55);
+    border: 1px solid rgb(72 81 99);
+    box-shadow: rgb(13 18 30 / 91%) 0px 6px 18px;
+}
+.dark #extensionsList .menu button, .dark .vvvvf #DisableExtension {
+    color: #c2c7c9;
+}
+.dark #extensionsList .menu button:hover {
+    background-color: #ffffff11;
+} 
+.dark #extensionsList .menu button:active {
+    color: #c2c7c987;
+}
+.dark .expanded-panel {
+    background: #151a28;
+}
+.dark .panel-header span {
+    color: #ffffffd4;
+}
+.dark .panel-actions {
+    background: #151a28;
+}
+.dark .tab-item:hover {
+    background-color: #ffffff11;
+}
+.dark .vvvvf #DisableExtension:hover {
+    box-shadow: 0px 0px 1px #ffffff9e, 0px 2px 7px #ffffff2b;
+}
+.dark .vvvvf #DisableExtension .ripple {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+.dark #extensionsList button, .dark .ccco {
+    color: #a8d3ff;
+}
+.dark shadow {
+    background: #151a28;
+    box-shadow: 0px -20px 8px #151a28;
+}
+.dark #extensionsList button .ripple, .dark .ccco .ripple, .dark .ddd .ripple {
+    background-color: rgba(131, 193, 255, 0.164);
+}
+.dark .panel-header .extension-id {
+    color: white;
+}
+.dark .status {
+    color: #a8d3ff;
+}
+.dark #extensionsList .menu .xoox:hover {
+    background-color: #0000;
+}

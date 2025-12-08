@@ -1,0 +1,14 @@
+.opera #updateAll {
+    background-color: #ff1a2e;
+}
+.opera #updateAll:hover {
+    background-color: #e21728;
+}
+.opera #extensionsList button, .ccco {
+    padding: 7px 6px;
+    color: #343b42;
+    background-color: #7891a926;
+}
+.opera #extensionsList button:hover, .ccco:hover {
+    background-color: #7891a938;
+}

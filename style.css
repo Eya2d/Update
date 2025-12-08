@@ -1,0 +1,322 @@
+body {
+  font-family: system-ui;
+  font-size: 12px;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  display: inline-block;
+}
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  display: block;
+}
+h2 {
+  margin-top: 0;
+}
+shadow {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0px -20px 8px #fff;
+}
+version {
+  position: fixed;
+  z-index: 1000;
+  bottom: -13px;
+  opacity: .5;
+  text-shadow: 0px -23px 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 2px;
+  height: -webkit-fill-available;
+}
+h2 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+button {
+  font-family: system-ui;
+  width: 40%;
+  transition: ease 0.3s;
+  font-size: 13px;
+  margin: 5px 0;
+  padding: 7px 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  background-color: #0b83ff;
+  color: white;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #0777e7;
+}
+.extension {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#extensionsList {
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding-top: 5px;
+  border-top: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+#extensionsList button, .ccco {
+  padding: 7px 6px;
+  color: #0b83ff;
+  background-color: #94c4ff4f;
+}
+#extensionsList button:hover,.ccco:hover {
+  background-color: #94c4ff8e;
+}
+#extensionsList button .ripple, .ccco .ripple, .ddd .ripple {
+  background-color: #0b85ff11;
+}
+.ddd {
+  
+}
+.expanded-panel {
+  position: fixed;
+  flex-direction: column;
+  z-index: 50;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  top: 0;
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  display: none;
+  left: 50%;
+  transform: translate(-50%);
+}
+.tab-item {
+  cursor: pointer;
+  transition: ease 0.3s;
+  padding: 8px 16px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 10px;
+  border-radius: 0px 25px 25px 0px;
+}
+.tab-item:hover {
+  background-color: #3d454911;
+}
+.tab-item img {
+  filter: drop-shadow(0px 0px 1px #d7dafa);
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+.tab-item:active .tab-title {
+  opacity: .6;
+}
+.ext-left {
+  display: flex;
+  align-items: center;
+}
+.ext-left img {
+  margin-right: 8px;
+}
+.status {
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 0;
+  border-radius: 10px;
+  color: #0b83ff;
+}
+.menu {
+  display: none;
+  padding: 6px 0;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 233, 239);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 18px;
+  z-index: 9999;
+  overflow: auto;
+  visibility: visible;
+  position: fixed;
+  width: 150px;
+  margin-left: -30px;
+  box-sizing: border-box;
+}
+#extensionsList .options-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0000;
+}
+#extensionsList button img {
+  opacity: .6;
+  height: 20px;
+}
+.tabs-list {
+  padding-bottom: 30px;
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.tab-title {
+  margin: auto 0;
+}
+#extensionsList .menu button {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  padding-left: 14px;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  color: #3d4549;
+  background-color: #0000;
+}
+#extensionsList .menu button:hover {
+  background-color: #3d454911;
+}
+#extensionsList .menu button:active {
+  transition: ease 0.0s;
+  color: #3d4549a4;
+}
+.panel-actions {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6px 0px;
+  margin-bottom: 4px;
+  background: white;
+}
+.panel-header {
+  display: flex;
+  align-items: center;
+  padding: 11px 14px;
+  border-bottom: 1px solid rgb(229, 231, 235);
+  margin-bottom: 4px;
+}
+.panel-header span {
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(17, 24, 39);
+}
+.panel-header img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+body #extensionsList .load-more-btn {
+  width: max-content;
+  padding: 7px 16px;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  display: block;
+}
+.panel-header span {
+  margin-top: 1px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 207.72px;
+}
+.panel-header .extension-id {
+  font-weight: 400;
+  opacity: .6;
+  font-size: 13px;
+}
+#updateAll .ripple {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+#panel-div {
+  display: flex;
+  align-items: center;
+}
+.vvvvf {
+  position: absolute;
+  right: 14px;
+  display: flex;
+  align-items: center;
+}
+.vvvvf img {
+  margin: 0;
+}
+.vvvvf #DisableExtension {
+  width: max-content;
+  padding: 7px 11px;
+  background: #0000;
+  color: #3d4968;
+}
+#extensionsList .vvvvf .ripple {
+  background-color: rgba(122, 122, 122, 0.116);
+}
+.vvvvf #DisableExtension:hover {
+  background: #0000;
+  box-shadow: 0px 0px 1px #465b829e, 0px 2px 7px #465b822b;
+}
+.vvvvf #DeleteExtension {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0000;
+}
+.vvvvf #DeleteExtension:hover {
+  background-color: #ff9b888e;
+}
+.vvvvf #DeleteExtension .ripple {
+  background-color: #ff9c883f;
+}
+.xoox {
+  cursor: context-menu;
+  opacity: .5;
+}
+#extensionsList .menu .xoox:hover {
+  background-color: #0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 601px) {
+  .panel-header span {
+    width: max-content;
+  }
+  .panel-actions button {
+    max-width: 250px;
+  }
+}

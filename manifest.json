@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Add-ons update",
+  "version": "1.0",
+  "description": "Update local (development) extensions with tab selection UI",
+  "permissions": [
+    "management",
+    "tabs",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Local Extensions"
+  },
+  "icons": {
+    "16": "Image/icon.png",
+    "32": "Image/icon.png",
+    "48": "Image/icon.png",
+    "128": "Image/icon.png"
+  }
+}

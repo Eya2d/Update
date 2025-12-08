@@ -1,0 +1,14 @@
+.edge button {
+    border-radius: 5px;
+}
+.edge .tab-item {
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 6px;
+}
+.edge #extensionsList .options-btn:hover {
+    background-color: #cccccc56;
+}
+.edge .options-btn:active img {
+    opacity: .4;
+}
